@@ -1,0 +1,27 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 my-3" *ngFor="let img of imgesPaths">
+                <div>
+                    <div class="work-card" [ngStyle]="{'background-image': 'url(' + img + ')'}">
+                        <!-- <img src="../../../assets/images/work/img-1-C4nS0eD8.jpg" class="w-100" alt=""> -->
+                        <div class="work-layer ">
+                            <div class="caption text-white">
+                                <h5 class="text-decoration-underline">Work 02</h5>
+                                <p>Animation</p>
+                            </div>
+                            <div class="icon text-black">
+                                <i class="fa-solid fa-share-nodes pointer"></i>
+                                <i class="fa-solid fa-eye"> <span class="text-decoration-underline"> 100</span> </i>
+                                <i class="fa-regular fa-heart"> <span class="text-decoration-underline">49</span> </i>
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                </div>
+            </div>
+            <button *ngIf="isVisable" type="button" class="btn btn-primary w-25 mb-3" (click)="showMore()">show more</button>
+        </div>
+    </div>
+</section>

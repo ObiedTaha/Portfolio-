@@ -1,0 +1,38 @@
+section {
+    .work-card {
+        position: relative;
+        // width: 400px;
+        height: 408px;
+        background-image: url('../../../assets/images/work/img-6-DFW03AZ3.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .work-layer {
+        background-color: #2C98F0;
+        position: absolute;
+        inset: 0;
+        display: flex;
+        padding-left: 50px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            opacity: 1;
+            transition: all 0.3s ease-in-out;
+        }
+
+        i {
+            text-align: center;
+            margin: 0 5px;
+            border-radius: 3px;
+            padding: 2px;
+            background-color: #96CCF8;
+        }
+    }
+
+
+}

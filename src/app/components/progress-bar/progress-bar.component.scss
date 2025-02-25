@@ -1,0 +1,228 @@
+section {
+    .title {
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .progress-after {
+        position: relative;
+
+        &::before {
+            content: "75%";
+            font-size: 20px;
+            font-weight: 900;
+            color: #3F51B5;
+            position: absolute;
+            right: 23%;
+            bottom: 0;
+            transform: translateY(-20%);
+            z-index: 2222;
+        }
+
+        .progress {
+            height: 5px;
+        }
+
+        &::after {
+            content: "";
+            width: 8PX;
+            height: 8PX;
+            background-color: #3F51B5;
+            border-radius: 50%;
+            position: absolute;
+            right: 24.8%;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2222;
+        }
+
+        .progress-bar {
+            background-color: #3F51B5;
+        }
+    }
+
+    .progress-after1 {
+        position: relative;
+
+        &::before {
+            content: "85%";
+            font-size: 20px;
+            font-weight: 900;
+            color: #f9bf3f;
+            position: absolute;
+            right: 13%;
+            bottom: 0;
+            transform: translateY(-20%);
+            z-index: 2222;
+        }
+
+        .progress {
+            height: 5px;
+        }
+
+        &::after {
+            content: "";
+            width: 8PX;
+            height: 8PX;
+            background-color: #af7901;
+            border-radius: 50%;
+            position: absolute;
+            right: 14%;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2222;
+        }
+
+        .progress-bar {
+            background-color: #af7901;
+        }
+    }
+
+    .progress-after2 {
+        position: relative;
+
+        &::before {
+            content: "70%";
+            font-size: 20px;
+            font-weight: 900;
+            color: #2fa499;
+            position: absolute;
+            right: 29%;
+            bottom: 0;
+            transform: translateY(-20%);
+            z-index: 2222;
+        }
+
+        .progress {
+            height: 5px;
+        }
+
+        &::after {
+            content: "";
+            width: 8PX;
+            height: 8PX;
+            background-color: #2fa499;
+            border-radius: 50%;
+            position: absolute;
+            right: 29%;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2222;
+        }
+
+        .progress-bar {
+            background-color: #2fa499;
+        }
+    }
+
+    .progress-after3 {
+        position: relative;
+
+        &::before {
+            content: "70%";
+            font-size: 20px;
+            font-weight: 900;
+            color: #ec5453;
+            position: absolute;
+            right: 39%;
+            bottom: 0;
+            transform: translateY(-20%);
+            z-index: 2222;
+        }
+
+        .progress {
+            height: 5px;
+        }
+
+        &::after {
+            content: "";
+            width: 8PX;
+            height: 8PX;
+            background-color: #ec5453;
+            border-radius: 50%;
+            position: absolute;
+            right: 39%;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2222;
+        }
+
+        .progress-bar {
+            background-color: #ec5453;
+        }
+    }
+
+    .progress-after4 {
+        position: relative;
+
+        &::before {
+            content: "90%";
+            font-size: 20px;
+            font-weight: 900;
+            color: #a84cb8;
+            position: absolute;
+            right: 9%;
+            bottom: 0;
+            transform: translateY(-20%);
+            z-index: 2222;
+        }
+
+        .progress {
+            height: 5px;
+        }
+
+        &::after {
+            content: "";
+            width: 8PX;
+            height: 8PX;
+            background-color: #a84cb8;
+            border-radius: 50%;
+            position: absolute;
+            right: 9%;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2222;
+        }
+
+        .progress-bar {
+            background-color: #a84cb8;
+        }
+    }
+
+    .progress-after5 {
+        position: relative;
+
+        &::before {
+            content: "80%";
+            font-size: 20px;
+            font-weight: 900;
+            color: #4054b2;
+            position: absolute;
+            right: 19%;
+            bottom: 0;
+            transform: translateY(-20%);
+            z-index: 2222;
+        }
+
+        .progress {
+            height: 5px;
+        }
+
+        &::after {
+            content: "";
+            width: 8PX;
+            height: 8PX;
+            background-color: #4054b2;
+            border-radius: 50%;
+            position: absolute;
+            right: 19%;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2222;
+        }
+
+        .progress-bar {
+            background-color: #4054b2;
+        }
+    }
+}

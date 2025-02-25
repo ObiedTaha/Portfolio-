@@ -1,0 +1,131 @@
+.card {
+
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        background-color: #F8F9FA;
+        position: absolute;
+        top: 40px;
+        left: -1px;
+        z-index: -2222;
+        transform: rotate(-45deg);
+        // overflow: hidden;
+    }
+
+    &::after {
+        content: "";
+        width: 7%;
+        height: 70px;
+        border-radius: 50%;
+        border: 6px solid #F8F9FA;
+        background-color: #2C98F0;
+
+        background-image: url('../../../assets/images/pencil-solid.svg');
+        background-size: 40%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        top: 38px;
+        left: -80px;
+        z-index: 2222;
+        overflow: hidden;
+    }
+}
+
+.card1 {
+
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        background-color: #F8F9FA;
+        position: absolute;
+        top: 40px;
+        left: -1px;
+        z-index: -2222;
+        transform: rotate(-45deg);
+        overflow: hidden;
+
+    }
+
+    &::after {
+        content: "";
+        width: 7%;
+        height: 70px;
+        border-radius: 50%;
+        border: 6px solid #F8F9FA;
+        background-color: #D9534F;
+        background-image: url('../../../assets/images/pencil-solid.svg');
+        background-size: 40%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        top: 38px;
+        left: -80px;
+        z-index: 2222;
+        overflow: hidden;
+    }
+}
+
+.card2 {
+
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        background-color: #F8F9FA;
+        position: absolute;
+        top: 40px;
+        left: -1px;
+        z-index: -2222;
+        transform: rotate(-45deg);
+        overflow: hidden;
+
+    }
+
+    &::after {
+        content: "";
+        width: 7%;
+        height: 70px;
+        border-radius: 50%;
+        border: 6px solid #F8F9FA;
+        background-color: #F0AD4E;
+
+        background-image: url('../../../assets/images/pencil-solid.svg');
+        background-size: 40%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        top: 38px;
+        left: -80px;
+        z-index: 2222;
+        overflow: hidden;
+    }
+}
+.empty-round {
+
+    position: relative;
+    &::after {
+        content: "";
+        width: 7%;
+        height: 70px;
+        border-radius: 50%;
+        border: 6px solid #F8F9FA;
+
+        background-size: 40%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        top: 23px;
+        left: -80px;
+        z-index: 2222;
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,28 @@
+section{
+    h5{
+        letter-spacing: 4px;
+    }
+    h4{
+        letter-spacing: 6px;
+    }
+
+    .line{
+        position: relative;
+        &::before{
+            content: "";
+            width: 100%;
+            width: 3px;
+            height: 100vh;
+            background-color: #EEEEEE;
+            position: absolute;
+            top: 0%;
+            left: -50px;
+            z-index: 2222;
+        }
+    }
+
+   
+
+
+  
+}
