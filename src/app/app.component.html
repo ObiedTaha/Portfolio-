@@ -1,11 +1,12 @@
 <div class="">
   <div class="row m-0">
-    <div class="col-md-2  p-0">
+    <!-- Sidebar: Hidden on small screens, visible on medium and up -->
+    <div class="col-0 col-md-2 p-0 d-none d-sm-block">
       <app-sidebar></app-sidebar>
     </div>
-    <div class=" col-sm-12 col-lg-10 p-0">
 
-      <app-home></app-home>
+    <div class="col-12 col-md-10 p-0 m-0">
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>

@@ -1,4 +1,7 @@
-.card {
+.card,
+.card1,
+.card2,
+.empty-round {
 
     position: relative;
 
@@ -21,8 +24,6 @@
         height: 70px;
         border-radius: 50%;
         border: 6px solid #F8F9FA;
-        background-color: #2C98F0;
-
         background-image: url('../../../assets/images/pencil-solid.svg');
         background-size: 40%;
         background-repeat: no-repeat;
@@ -32,100 +33,88 @@
         left: -80px;
         z-index: 2222;
         overflow: hidden;
+    }
+}
+
+.card {
+    &::after {
+        background-color: #2C98F0;
     }
 }
 
 .card1 {
-
-    position: relative;
-
-    &::before {
-        content: "";
-        width: 60px;
-        height: 60px;
-        background-color: #F8F9FA;
-        position: absolute;
-        top: 40px;
-        left: -1px;
-        z-index: -2222;
-        transform: rotate(-45deg);
-        overflow: hidden;
-
-    }
-
     &::after {
-        content: "";
-        width: 7%;
-        height: 70px;
-        border-radius: 50%;
-        border: 6px solid #F8F9FA;
         background-color: #D9534F;
-        background-image: url('../../../assets/images/pencil-solid.svg');
-        background-size: 40%;
-        background-repeat: no-repeat;
-        background-position: center center;
-        position: absolute;
-        top: 38px;
-        left: -80px;
-        z-index: 2222;
-        overflow: hidden;
     }
+
 }
 
 .card2 {
-
-    position: relative;
-
-    &::before {
-        content: "";
-        width: 60px;
-        height: 60px;
-        background-color: #F8F9FA;
-        position: absolute;
-        top: 40px;
-        left: -1px;
-        z-index: -2222;
-        transform: rotate(-45deg);
-        overflow: hidden;
-
-    }
-
     &::after {
-        content: "";
-        width: 7%;
-        height: 70px;
-        border-radius: 50%;
-        border: 6px solid #F8F9FA;
         background-color: #F0AD4E;
-
-        background-image: url('../../../assets/images/pencil-solid.svg');
-        background-size: 40%;
-        background-repeat: no-repeat;
-        background-position: center center;
-        position: absolute;
-        top: 38px;
-        left: -80px;
-        z-index: 2222;
-        overflow: hidden;
     }
 }
-.empty-round {
 
-    position: relative;
-    &::after {
-        content: "";
-        width: 7%;
-        height: 70px;
-        border-radius: 50%;
-        border: 6px solid #F8F9FA;
 
-        background-size: 40%;
-        background-repeat: no-repeat;
-        background-position: center center;
-        position: absolute;
-        top: 23px;
-        left: -80px;
-        z-index: 2222;
-        overflow: hidden;
+//small screen
+@media (max-width: 991px) {
+
+    .card,
+    .card1,
+    .card2,
+    .empty-round {
+        &::after {
+            height: 50px;
+            left: -65px;
+
+        }
+
+        h3 {
+            font-size: .9em;
+        }
+
+        p {
+            font-size: 0.6em;
+        }
+    }
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1198px) {
+
+    .card,
+    .card1,
+    .card2,
+    .empty-round {
+        &::after {
+            height: 50px;
+            left: -70px;
+
+        }
+
+        h3 {
+            font-size: 1em;
+        }
+
+        p {
+            font-size: 0.7em;
+        }
+    }
+}
+
+@media (min-width: 1199px) and (max-width: 1400px) {
+    .card,.card1,.card2,.empty-round {
+        &::after {
+            height: 50px;
+        left: -75px;
+
+        }
+        h3{
+            font-size: 1.2em;
+        }
+        p{
+            font-size: 0.8em;
+        }
     }
 }
